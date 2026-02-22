@@ -1,3 +1,4 @@
+from colorama import Fore, Style
 color = input('Sisesta oma lemmikvärv:').lower()
 
 
@@ -14,12 +15,12 @@ color = input('Sisesta oma lemmikvärv:').lower()
 
 match color:
     case 'punane':
-        print('Sa oled energeline inimene!')
+        print(Fore.RED + 'Sa oled energeline inimene!' + Style.RESET_ALL)
     case 'roosa':
-        print('Sa oled romantik!')
+        print(Fore.MAGENTA + 'Sa oled romantik!' + Style.RESET_ALL)
     case 'roheline':
-        print('Sa oled rahulik inimene!')
+        print(Fore.GREEN + 'Sa oled rahulik inimene!' + Style.RESET_ALL)
     case 'sinine':
-        print('Sa oled keskendunud inimene!')
+        print(Fore.BLUE + 'Sa oled keskendunud inimene!' + Style.RESET_ALL)
     case _:
-        print('Sa oled imeline ükssarvik!')
+        print(Fore.CYAN + 'Sa oled imeline ükssarvik!' + Style.RESET_ALL)
