@@ -1,4 +1,4 @@
-n = int(input('Sisesta täisarv: 9'))
+n = int(input('Sisesta täisarv: '))
 
 # if n % 2 == 0:
 #     print('Arv on paaris')
